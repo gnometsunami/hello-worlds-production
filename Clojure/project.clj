@@ -2,7 +2,7 @@
   :description "Hello World"
   :url "https://example.com/HelloWorld"
   :dependencies [[org.clojure/clojure "1.11.0"]]
-  :main ^:skip-aot helloWorld.core
+  :main ^:skip-aot helloworld.core
   :target-path "target/%s"
   :uberjar-name "hello_world.jar"
   :profiles {:uberjar {:aot :all}})
