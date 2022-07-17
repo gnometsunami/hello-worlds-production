@@ -1,3 +1,2 @@
 $strString = "Hello World"
-write-host $strString
-Get-InstalledModule
+Write-Output $strString

@@ -6,7 +6,7 @@ COPY src src
 RUN lein uberjar
 
 # Run app using distroless
-FROM gcr.io/distroless/java11-debian11
+FROM gcr.io/distroless/java11-debian11:nonroot
 WORKDIR /app
 COPY --from=build-env /app/target/uberjar/hello_world.jar .
 USER nonroot:nonroot

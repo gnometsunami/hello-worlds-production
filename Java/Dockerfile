@@ -1,13 +1,13 @@
 # Build Image
 FROM openjdk:11-jdk-slim-bullseye AS build-env
 WORKDIR /app
-COPY ./hello_world ./hello_world
-RUN javac hello_world/*.java
-RUN jar cfe hello_world.jar hello_world.HelloWorld hello_world/*.class
+COPY ./HelloWorld ./HelloWorld
+RUN javac HelloWorld/*.java && \
+  jar cfe HelloWorld.jar HelloWorld.HelloWorld HelloWorld/*.class
 
 # Run app using distroless
-FROM gcr.io/distroless/java11-debian11
+FROM gcr.io/distroless/java11-debian11:nonroot
 WORKDIR /app
-COPY --from=build-env /app/hello_world.jar .
+COPY --from=build-env /app/HelloWorld.jar .
 USER nonroot:nonroot
-CMD [ "hello_world.jar" ]
+CMD [ "HelloWorld.jar" ]

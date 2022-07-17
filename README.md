@@ -1,5 +1,6 @@
-## Intro
+# Hello Worlds
 
+## Intro
 This is a collection of `Hello World` programs written in various programming languages.
 
 Each language and framework is organized into it's own folder which contains everything needed to build and run the example.
@@ -35,9 +36,9 @@ The reasoning behind choosing to build a self-contained dotnet application is du
 
 Written in Go. Containerized using the Google distroless go image.
 
-## JavaScript-Nodejs
+## JavaScript-Node.js
 
-Written in JavaScript, built using Nodejs. Containerized using the Google distroless nodejs image.
+Written in JavaScript, built using Node.js. Containerized using the Google distroless node.js image.
 
 ## Python
 
@@ -51,6 +52,6 @@ Written in Powershell. The dockerfile has a commented line which provides an exa
 
 Written in Rust. Containerized using the Google distroless cc image.
 
-## TypeScript-Nodejs
+## TypeScript-Node.js
 
-Written in TypeScript, built using Nodejs. Containerized using the Google distroless nodejs image.
+Written in TypeScript, built using Node.js. Containerized using the Google distroless node.js image.
