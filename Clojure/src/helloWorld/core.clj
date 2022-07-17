@@ -1,4 +1,4 @@
-(ns hello_world.core
+(ns helloWorld.core
   (:gen-class))
 
 (defn -main [& args]
