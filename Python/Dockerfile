@@ -15,6 +15,6 @@ RUN /venv/bin/pip install --disable-pip-version-check -r /requirements.txt
 FROM gcr.io/distroless/python3-debian11:nonroot
 WORKDIR /app
 COPY --from=build-venv /venv /venv
-COPY hello_world.py /app
+COPY ./src .
 USER nonroot:nonroot
 ENTRYPOINT [ "/venv/bin/python3", "hello_world.py" ]
