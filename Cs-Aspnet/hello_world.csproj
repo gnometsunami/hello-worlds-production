@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
+    <DebugType>None</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="OpenTelemetry" />
+    <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.*-*" />
+    <PackageReference Include="OpenTelemetry.Exporter.Console" Version="1.*-*" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.*-*" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.*-*" />
+  </ItemGroup>
+</Project>
