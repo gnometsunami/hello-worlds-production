@@ -1,5 +1,5 @@
 # Build env
-FROM rust:1.41.0 as build-env
+FROM rust:1.62 as build-env
 WORKDIR /app
 COPY Cargo.toml .
 COPY src ./src
