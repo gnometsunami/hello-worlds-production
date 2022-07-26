@@ -31,7 +31,7 @@ then
     busybox:latest \
     rm -rf \
       /tmp/app/.github \
-      /tmp/app/*.log \
+      /tmp/app/super-linter.log \
       /tmp/app/.mypy_cache \
       /tmp/app/target \
       /tmp/app/Cargo.lock
