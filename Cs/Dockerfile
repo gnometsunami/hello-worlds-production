@@ -5,7 +5,8 @@ ARG dpkgArch="$(dpkg --print-architecture)"; \
         case "$dpkgArch" in \
             amd64) export RID='linux-x64' ;; \
             arm64) export RID='linux-arm64' ;; \
-            armhf) export RID='linux-arm' ;; \
+            s390x) export RID='linux-s390x' ;; \
+            *) export RID='linux-x64' ;; \
         esac;
 WORKDIR /build
 COPY *.csproj .
