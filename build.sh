@@ -1,6 +1,6 @@
 #!/bin/bash
 
-lint=1
+#lint=1
 build=1
 scan=1
 run=1
